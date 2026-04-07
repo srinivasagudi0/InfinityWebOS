@@ -32,9 +32,31 @@ st.markdown('''
     </form>
 ''', unsafe_allow_html=True)
 
-if st.button("Google"):
-    st.write("You clicked the button!")
-    wb.open("https://www.google.com/")
+# Custom CSS for a floating button at the bottom left for Google.
+st.markdown("""
+    <style>
+    .floating-btn-left {
+        position: fixed;
+        bottom: 30px;
+        left: 30px;
+        z-index: 9999;
+        background-color: #4b79ff;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        padding: 16px 32px;
+        font-size: 18px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+    <form action="https://www.google.com/" target="_blank">
+        <button class="floating-btn-left" type="submit">Google</button>
+    </form>
+""", unsafe_allow_html=True)
 
 if st.button("Calculator"):
     st.write("You clicked the button!")
