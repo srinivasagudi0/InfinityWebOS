@@ -39,3 +39,17 @@ def open_file_explorer():
         subprocess.Popen(["nautilus", "."])
     else:
         print("Unsupported operating system")
+
+def open_settings():
+    # This function will open the settings application based on the operating system
+    os_name = platform.system()
+
+    if os_name == "Windows":
+        subprocess.Popen("ms-settings:")
+    elif os_name == "Darwin":  # macOS
+        subprocess.Popen(["open", "-a", "System Preferences"])
+    elif os_name == "Linux":
+        subprocess.Popen(["gnome-control-center"])
+    else:
+        print("Unsupported operating system")
+        

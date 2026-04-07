@@ -26,7 +26,8 @@ if st.button("File Explorer"):
 
 if st.button("Settings"):
     st.write("You clicked the button!")
-    # Working on it
+    open_settings()
+
 if st.button("Music Player"):
     st.write("You clicked the button!")
     # Working on it, WIll open apple music or spotify.
