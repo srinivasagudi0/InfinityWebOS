@@ -22,7 +22,7 @@ if st.button("Notepad"):
 
 if st.button("File Explorer"):
     st.write("You clicked the button!")
-    # Working on it
+    open_file_explorer()
 
 if st.button("Settings"):
     st.write("You clicked the button!")

@@ -26,3 +26,16 @@ def open_notepad():
         subprocess.Popen(["gedit"])
     else:
         print("Unsupported operating system")
+
+def open_file_explorer():
+    # This function will open the file explorer based on the operating system
+    os_name = platform.system()
+
+    if os_name == "Windows":
+        subprocess.Popen("explorer.exe")
+    elif os_name == "Darwin":  # macOS
+        subprocess.Popen(["open", "."])
+    elif os_name == "Linux":
+        subprocess.Popen(["nautilus", "."])
+    else:
+        print("Unsupported operating system")
