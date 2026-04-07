@@ -15,3 +15,18 @@ if st.button("Google"):
 if st.button("Calculator"):
     st.write("You clicked the button!")
     open_calculator()
+
+if st.button("Notepad"):
+    st.write("You clicked the button!")
+    # Working on it
+
+if st.button("File Explorer"):
+    st.write("You clicked the button!")
+    # Working on it
+
+if st.button("Settings"):
+    st.write("You clicked the button!")
+    # Working on it
+if st.button("Music Player"):
+    st.write("You clicked the button!")
+    # Working on it, WIll open apple music or spotify.
