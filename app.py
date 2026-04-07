@@ -1,6 +1,6 @@
 import streamlit as st
 import webbrowser as wb
-from support import open_calculator
+from support import *
 
 st.title("InfinityOS")
 
@@ -18,7 +18,7 @@ if st.button("Calculator"):
 
 if st.button("Notepad"):
     st.write("You clicked the button!")
-    # Working on it
+    open_notepad()
 
 if st.button("File Explorer"):
     st.write("You clicked the button!")
