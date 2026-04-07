@@ -3,6 +3,8 @@ import webbrowser as wb
 from support import *
 
 st.title("InfinityOS")
+st.set_page_config(page_title="InfinityOS", page_icon=":computer:", layout="wide")
+
 
 if st.button("Youtube"):
     st.write("You clicked the button!")
