@@ -1,10 +1,8 @@
 import streamlit as st
 import webbrowser as wb
-import shlex
+from support import open_calculator
 
 st.title("InfinityOS")
-
-
 
 if st.button("Youtube"):
     st.write("You clicked the button!")
@@ -14,6 +12,6 @@ if st.button("Google"):
     st.write("You clicked the button!")
     wb.open("https://www.google.com/")
 
-if st.button("Caluculator"):
-    # working on this and I should focus on it opening in both windows and mac
-
+if st.button("Calculator"):
+    st.write("You clicked the button!")
+    open_calculator()
