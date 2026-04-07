@@ -52,4 +52,23 @@ def open_settings():
         subprocess.Popen(["gnome-control-center"])
     else:
         print("Unsupported operating system")
-        
+
+def open_music_player():
+    # This function will open the music player application based on the operating system
+    os_name = platform.system()
+
+    if os_name == "Windows":
+        # check if spotify is installed, if not open windows media player
+        try:
+            subprocess.Popen("spotify.exe")
+        except FileNotFoundError:
+            subprocess.Popen("wmplayer.exe")
+    elif os_name == "Darwin":  # macOS
+        try:
+            subprocess.Popen(["open", "-a", "Spotify"])
+        except FileNotFoundError:
+            subprocess.Popen(["open", "-a", "Music"])
+    elif os_name == "Linux":
+        subprocess.Popen(["rhythmbox"])
+    else:
+        print("Unsupported operating system")

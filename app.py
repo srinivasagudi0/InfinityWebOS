@@ -30,4 +30,4 @@ if st.button("Settings"):
 
 if st.button("Music Player"):
     st.write("You clicked the button!")
-    # Working on it, WIll open apple music or spotify.
+    open_music_player()
