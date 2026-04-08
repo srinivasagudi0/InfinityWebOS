@@ -315,7 +315,6 @@ st.markdown(
                 <div class="brand-kicker">Desktop Preview</div>
                 <div class="brand-text">
                     <h1>InfinityOS</h1>
-                    <p>Minimal desktop, centered glass dock, cleaner proportions.</p>
                 </div>
             </div>
             <div class="clock-card">
